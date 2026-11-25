@@ -6,7 +6,7 @@ Draft Check is a browser prototype for writers reviewing claims in an essay. It 
 
 ## Technology stack
 
-HTML provides the editor and controls, CSS handles the two-panel layout, and local JavaScript checks the writing mode and wording. Gemini supported the Lab 3 simulation. Codex assisted with implementation and testing. The source collection and retrieval method for a future evidence service are still undecided.
+HTML provides the editor and controls, CSS handles the two-panel layout, and local JavaScript checks the writing mode and wording. Codex assisted with implementation and testing. The source collection and retrieval method for a future evidence service are still undecided.
 
 ## Run or inspect
 
