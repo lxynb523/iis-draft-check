@@ -48,7 +48,7 @@ Each check used “EVs always emit more CO2 than diesel cars.” Only the mode a
 
 ## AI assistance
 
-I used Gemini in Lab 3 to walk through the essay and debate cases. For A2, Codex helped turn my Lab 2 storyboards and Lab 3 specification into a working browser prototype. I tried my own sentence about Genshin Impact and suggested offering two possible edits. I also pointed out that the writer already chooses a mode before checking a draft. Codex revised the feedback and tested the example flows in Edge, including whether dismissing a prompt preserved the original text.
+Codex helped turn my Lab 2 storyboards and Lab 3 specification into a working browser prototype. I tried my own sentence about Genshin Impact and suggested offering two possible edits. For “No other game will ever surpass GTA.”, the first version softened the sentence before asking what I meant, so I asked for an intent choice and preview first. I also pointed out that the writer already chooses a mode before checking a draft. Codex revised the feedback and tested the example flows in Edge, including whether dismissing a prompt preserved the original text.
 
-Codex also helped draft and translate the report, prepare the system diagram and README, and capture screenshots from the browser. We compared the literature claims with the cited research and used the Week 1 slides to check the explanation of the feedback loop. The screenshots show the prototype running with illustrative data.
+Codex also helped draft the report, prepare the system diagram and README, and capture screenshots from the browser. We compared the literature claims with the cited research and used the Week 1 slides to check the explanation of the feedback loop. The screenshots show the prototype running with illustrative data.
 
