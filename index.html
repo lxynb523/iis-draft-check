@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-GB">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Draft Check | Writing assistant prototype</title>
+<style>
+:root{font:17px/1.55 system-ui,sans-serif;color:#172332;background:#eef2f5}
+*{box-sizing:border-box}body{max-width:1050px;margin:0 auto;padding:clamp(16px,4vw,50px)}h1,h2,p{margin:0 0 .65rem}
+h1{font-size:2rem}h2{font-size:1.15rem}header{margin-bottom:1.5rem}
+small,.muted{color:#45576a}main{display:grid;grid-template-columns:3fr 2fr;gap:1.2rem;align-items:start}
+section,aside{background:white;border:1px solid #aebdcb;border-radius:12px;padding:1.15rem}
+label{font-weight:650;display:block;margin:.8rem 0 .3rem}
+textarea,select,button{font:inherit;border:1px solid #718599;border-radius:6px;background:white;color:inherit;padding:.48rem .65rem}
+textarea{width:100%;min-height:155px;resize:vertical}button{cursor:pointer;margin:.2rem .25rem .2rem 0}
+button:hover{background:#e3edf7}button.primary{background:#184b73;color:white}button.primary:hover{background:#103c61}
+:focus-visible{outline:3px solid #036bb7;outline-offset:3px}
+aside[data-active="true"]{border-left:5px solid #2870a6}
+#evidence{background:#eef5fb;padding:.8rem;margin-top:.8rem;border-radius:6px}
+@media(max-width:700px){main{grid-template-columns:1fr}}
+</style>
+<header><h1>Draft Check</h1><p>Writing assistant prototype · Rule-based writing feedback</p></header>
+<main>
+<section aria-labelledby="draft-title">
+<h2 id="draft-title">Your draft</h2>
+<button id="essay" type="button">Load essay example</button>
+<button id="debate" type="button">Load debate example</button>
+<label for="mode">Writing mode</label><select id="mode"><option value="essay">Academic essay</option><option value="debate">Debate</option></select>
+<label for="draft">Draft text</label><textarea id="draft" aria-describedby="hint"></textarea>
+<p id="hint"><small>Try an EV and diesel emissions comparison, a “best game” judgement, or a prediction such as “No other game will ever surpass GTA.”</small></p>
+<button id="check" class="primary" type="button">Check draft</button>
+</section>
+<aside id="feedback" aria-labelledby="feedback-title">
+<h2 id="feedback-title" tabindex="-1">Draft feedback</h2>
+<p id="status" role="status">Enter a sentence or load an example, then select Check draft.</p>
+<div id="prediction" hidden>
+<button id="choose-so-far" type="button">Compare games I’ve played so far</button>
+<button id="choose-future" type="button">Make a less certain prediction</button>
+<button id="keep-prediction" type="button">Keep my original emphasis</button>
+<div id="prediction-preview" hidden>
+<p id="prediction-wording" aria-live="polite"></p>
+<button id="apply-prediction" type="button">Use suggested wording</button>
+</div>
+</div>
+<div id="actions" hidden>
+<button id="compare" type="button" aria-expanded="false" aria-controls="evidence">Compare data</button>
+<button id="dismiss" type="button">Dismiss</button>
+<button id="switch" type="button">Dismiss and switch to Debate</button>
+</div>
+<div id="evidence" hidden><h2>Illustrative comparison</h2>
+<p><strong>Source:</strong> Mock lifecycle evidence card</p>
+<p>This fictional example distinguishes emissions from making a vehicle and emissions from using it. A fair comparison would use the same driving distance and state assumptions about fuel and electricity.</p>
+<p id="suggestion">Possible revision: “The comparison depends on manufacturing emissions, energy sources and lifetime distance.”</p>
+<button id="use" type="button">Use suggested wording</button></div>
+</aside>
+</main>
+<script src="app.js"></script>
+</html>
