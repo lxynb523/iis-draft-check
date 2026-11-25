@@ -1,8 +1,12 @@
 # Draft Check
 
-README prose word count: 690
+README prose word count: 760
 
 Draft Check is a browser prototype for writers reviewing claims in an essay. It implements an editor, two sample drafts, a writing mode selector, and an evidence card with dismissal and revision controls. JavaScript uses wording rules for broad EV and diesel emissions comparisons, some best/worst judgements and a small set of game predictions. The evidence card contains fictional teaching material. Live source retrieval and general claim analysis are planned.
+
+## Technology stack
+
+HTML provides the editor and controls, CSS handles the two-panel layout, and local JavaScript checks the writing mode and wording. Gemini supported the Lab 3 simulation. Codex assisted with implementation and testing. The source collection and retrieval method for a future evidence service are still undecided.
 
 ## Run or inspect
 
@@ -14,7 +18,9 @@ Open `index.html` in your browser with `app.js` in the same folder. The demo use
 
 4. In Academic essay mode, check “No other game will ever surpass GTA.” Choose a less certain prediction to preview the wording. Keep the original or select **Use suggested wording** to apply the revision.
 
-See [interaction frames](interaction.md) for screenshots and the system diagram.
+## Additional files
+
+The [interaction frames](interaction.md) show the prototype in use. The [system diagram](Draft%20Check%20system%20architecture.png) identifies working, simulated and planned components. All prototype materials are in this repository. No separate ZIP is needed.
 
 ## Development record
 
